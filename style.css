@@ -1,0 +1,377 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin:0 auto;
+    max-width: 1200px;
+    font-family: 'lato';
+    color: #333;
+}
+
+.icon-cart{
+    width: 40px;
+    height: 40px;
+    stroke: #000;
+
+
+}
+
+.icon-cart:hover{ /*para que el cursor cambie cuando pase por encima*/
+    cursor: pointer;
+}
+
+img{
+    max-width: 100%;
+}
+
+
+/*estilos para el header*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 40px 0 ;
+}
+
+
+.container-icon{
+    position: relative;
+}
+
+
+.count-products{
+    position: absolute;
+    top: 55%;
+    right: 0;
+
+    background-color: #000;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+}
+
+
+.container-cart-productos{
+    position: absolute;
+    top: 50px;
+right: 0;
+
+    background-color: #fff;
+    width: 400px;
+    z-index: 1;
+}
+
+.cart-producto{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 20);
+    align-items: center;
+
+}
+
+.hidden-cart{
+    display: none;
+}
+
+
+.info-cart-producto{
+    display: flex;
+    justify-content: space-between;
+    flex: 0.8;
+}
+
+.titulo-producto-carrito{
+    font-size: 20px;
+}
+
+
+.precio-producto-carrito{
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 10px;
+
+}
+
+.cantidad-producto-carrito{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.cart-total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+
+.cart-total h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.total-pagar{
+    font-size: 20px;
+    font-weight: 1000;
+}
+
+
+
+.icon-close{
+    width: 25px;
+    height: 25px;
+}
+
+
+.icon-close.hover{
+    stroke: red; 
+    cursor: pointer;  
+}
+
+
+
+
+/*Maaain*/
+.container-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.item{
+    border-radius: 10px;
+}
+
+.item:hover{
+    box-shadow: 0 10px 20px rgb(0, 0, 0, 0.20);
+}
+
+
+.item img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    /*este transition hace el efecto de sum tambien*/
+    transition: all .5s;
+}
+
+
+/* ESTO es para hacerle sum cuando pasas el cursor por la IMG*/
+.item figure{
+    overflow: hidden;
+}
+
+
+.item:hover img{
+    transform: scale(1.2);
+}
+
+
+.info-producto{
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.precio{
+    font-size: 18px;
+    font-weight: 900;
+
+}
+
+.info-producto button{
+    border: none;
+    background: none;
+    background-color: #000;
+    color: aliceblue;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
+.container-cart-productos{
+    position: absolute;
+    top: 50px;
+    right: 0;
+
+    background-color: #fff;
+    width: 400px;
+    z-index: 1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 20);
+    border-radius: 10px;
+}
+ /*Parte de INicio de sesion*/
+
+
+
+.input-contenedor{
+    margin-left: 420px;
+    margin-top: 10px;
+}
+
+/*Titulo Inicio*/
+
+.titulo-inicio{
+    padding: 20px;
+    text-align: center;
+}
+
+.titulo-titulo{
+    font-size: 60px;
+}
+
+.ubicaciones{
+    padding: 20px;
+    text-align: center;
+}
+
+.titulo-ubicacion{
+    font-size: 60px;
+}
+
+.ubi{
+    font-size: 20px;
+}
+
+.imagen-ubicacion{
+    width: 1000px;
+}
+
+.ven-a-visitarnos{
+    font-size: 30px;
+}
+
+
+
+
+/* SOBRE NOSOTROS*/
+
+.branding{
+    padding: 100px;
+    display: flex;
+    font-size: 20px;
+}
+
+.logo-sobre-nosotros{
+    display: flex;
+    width: 500px;
+}
+
+
+
+/*franquito part*/
+/*Formulario Login*/
+
+.title{
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.titulo-formulario{
+    background-color: #000000;
+    border: #ffffff;
+    border-radius: 20px;
+    font-size: 25px;
+    color: #ffffff;
+    font-family: 'arial';
+}
+
+
+.form-register{
+    width: 400px;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.form-register h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+
+}
+
+.controls{
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #ffffff;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+
+}
+
+.form-register p{
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.form-register a{
+    color: white;
+    text-decoration: none;
+}
+
+.form-register a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.form-register .botons{
+    width: 100%;
+    background: #24303c;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+    margin-left: 130px;
+
+
+    
+}
+
+
+
+.form-register:hover{
+    box-shadow: 0 10px 20px rgb(0, 0, 0, 0.20);
+}
+
+
+
+
+
+
+/*login*/
+
+
