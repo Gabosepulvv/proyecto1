@@ -368,7 +368,30 @@ right: 0;
 }
 
 
+.compralatte{
+    text-align: center;
+}
 
+.texto-cantidad{
+    text-align: center;
+    
+}
+
+
+.comprapanqueque{
+    text-align: center;
+}
+
+.texto-cantidad{
+    text-align: center;
+    
+}
+
+.botoncompra{
+    margin-left: 250px;
+    background-color: brown;
+    color: aliceblue;
+}
 
 
 
